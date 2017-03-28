@@ -80,15 +80,15 @@ class MigrationEngine {
         return await teardownFunc(context);
     }
 
-    async _loadState () {
+    async _loadState (context) {
         const loadStateFunc = this.options.loadState || NOOP;
-        const state = await loadStateFunc();
+        const state = await loadStateFunc(context);
         return state || {};
     }
 
-    async _saveState (state) {
+    async _saveState (context, state) {
         const saveStateFunc = this.options.saveState || NOOP;
-        return await saveStateFunc(state);
+        return await saveStateFunc(context, state);
     }
 }
 

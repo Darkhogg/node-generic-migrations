@@ -1,6 +1,6 @@
 {
   "name": "generic-migrations",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "A promise-based generic migration library",
   "author": "Daniel Escoz <darkhogg+npm@gmail.com>",
   "license": "MIT",
