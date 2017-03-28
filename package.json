@@ -1,6 +1,6 @@
 {
   "name": "generic-migrations",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A promise-based generic migration library",
   "author": "Daniel Escoz <darkhogg+npm@gmail.com>",
   "license": "MIT",
@@ -10,9 +10,11 @@
     "babel": "rm -rf dist/* && babel src -d dist --source-maps"
   },
   "dependencies": {
+    "babel-runtime": "^6.23.0"
+  },
+  "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.2.2",
-    "babel-runtime": "^6.23.0"
+    "babel-preset-env": "^1.2.2"
   }
 }
